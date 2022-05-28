@@ -1,0 +1,17 @@
+<div class="comment-container">
+    <div class="comment container medium">
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = "{{url absolute="true"}}";
+                this.page.identifier = "{{title}}"
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://sas-6.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    </div>
+</div>

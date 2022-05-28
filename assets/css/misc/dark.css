@@ -69,6 +69,10 @@
     background-color: var(--dark-mode-bg-color);
 }
 
+.dark-mode .canvas-close {
+    background-color: var(--dark-mode-bg-color);
+}
+
 .dark-mode .sep::after {
     background-color: var(--dark-mode-border-color);
 }

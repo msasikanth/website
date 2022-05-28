@@ -1,0 +1,27 @@
+<footer class="site-footer container large">
+    <div class="copyright">
+        Made with ❤️ using <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+    </div>
+
+    {{!-- {{#if @site.secondary_navigation}}
+        <nav class="footer-nav">
+            {{navigation type="secondary"}}
+        </nav>
+    {{else}}
+        {{> logo}}
+    {{/if}} --}}
+
+    <div class="footer-social">
+        {{#if @site.twitter}}
+            <a class="footer-social-item footer-social-item-twitter" href="{{twitter_url @site.twitter}}"
+                target="_blank" rel="noopener" aria-label="Twitter">
+                <i class="icon icon-twitter"></i>
+            </a>
+        {{/if}}
+        <a class="footer-social-item footer-social-item-rss"
+            href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" target="_blank" rel="noopener"
+            aria-label="RSS">
+            <i class="icon icon-rss"></i>
+        </a>
+    </div>
+</footer>
