@@ -42,8 +42,17 @@
     font-family: var(--font-serif);
 }
 
+.post-title-link {
+    background-image: linear-gradient(var(--primary-color), var(--primary-color));
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+    text-decoration: none;
+}
+
 .post-title-link:hover {
-    color: var(--primary-color);
+    background-size: 100% 3px;
 }
 
 .post-meta {
@@ -84,6 +93,7 @@
 .post-action {
     display: flex;
     line-height: 1;
+    align-items: center;
 }
 
 .post-link {
@@ -109,18 +119,9 @@
 }
 
 .post-link.primary::before {
-    content: "\e932";
+    content: "\e933";
     left: -3px;
     font-size: 14px;
-}
-
-.post-link.secondary {
-    margin-left: 15px;
-    padding-left: 17px;
-}
-
-.post-link.secondary::before {
-    content: "\e933";
 }
 
 .post-author {

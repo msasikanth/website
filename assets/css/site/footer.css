@@ -2,16 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 24px;
-    margin-top: 48px;
-    padding-top: 48px;
-    padding-bottom: 96px;
+    margin-top: 45px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .copyright,
 .footer-social {
     flex: 2;
-    min-width: 160px;
 }
 
 .copyright {
@@ -41,17 +39,11 @@
     margin: 0 10px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.65;
 }
 
 @media (max-width: 767px) {
     .site-footer {
         flex-direction: column;
-    }
-
-    .copyright,
-    .footer-social {
-        min-width: auto;
     }
 
     .copyright {

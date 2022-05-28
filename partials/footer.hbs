@@ -1,23 +1,17 @@
 <footer class="site-footer container large">
     <div class="copyright">
-        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+        Made with ❤️ using <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
     </div>
 
-    {{#if @site.secondary_navigation}}
+    {{!-- {{#if @site.secondary_navigation}}
         <nav class="footer-nav">
             {{navigation type="secondary"}}
         </nav>
     {{else}}
         {{> logo}}
-    {{/if}}
+    {{/if}} --}}
 
     <div class="footer-social">
-        {{#if @site.facebook}}
-            <a class="footer-social-item footer-social-item-facebook" href="{{facebook_url @site.facebook}}"
-                target="_blank" rel="noopener" aria-label="Facebook">
-                <i class="icon icon-facebook"></i>
-            </a>
-        {{/if}}
         {{#if @site.twitter}}
             <a class="footer-social-item footer-social-item-twitter" href="{{twitter_url @site.twitter}}"
                 target="_blank" rel="noopener" aria-label="Twitter">
